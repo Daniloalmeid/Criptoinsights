@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cripto Insights - Sua Plataforma de Insights On-Chain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animação para os cards */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+    }
+    /* Gradiente para o hero */
+    .hero-bg {
+      background: linear-gradient(135deg, #1e3a8a, #6b21a8);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo.png" alt="Cripto Insights Logo" class="h-12 mr-4" onerror="this.src='https://via.placeholder.com/50?text=Logo'"/>
+        <h1 class="text-2xl font-bold text-cyan-400">Cripto Insights</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-cyan-400 transition">Início</a>
+        <a href="wallet.html" class="hover:text-cyan-400 transition">Carteira</a>
+        <a href="stake.html" class="hover:text-cyan-400 transition">Stake</a>
+        <a href="insights.html" class="hover:text-cyan-400 transition">Insights</a>
+        <a href="about.html" class="hover:text-cyan-400 transition">Sobre</a>
+        <a href="contact.html" class="hover:text-cyan-400 transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Bem-vindo ao Cripto Insights</h2>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        A primeira plataforma do Brasil e América Latina que transforma dados on-chain em insights simples, confiáveis e acionáveis.
+      </p>
+      <div class="space-x-4">
+        <a href="wallet.html" class="bg-cyan-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 transition">
+          Conectar Carteira
+        </a>
+        <a href="insights.html" class="bg-transparent border-2 border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-gray-900 transition">
+          Explorar Insights
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Nossas Funcionalidades</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Newsletter Card -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Newsletter On-Chain</h3>
+          <p class="text-gray-300">
+            Receba semanalmente rankings, movimentações de carteiras e tendências de tokens, tudo direto da blockchain.
+          </p>
+        </div>
+        <!-- Wallet Card -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Carteira & Token INS</h3>
+          <p class="text-gray-300">
+            Conecte sua Phantom Wallet e consulte saldo e histórico do token INS, nativo do Cripto Insights.
+          </p>
+        </div>
+        <!-- Stake Card -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Stake/Unstake</h3>
+          <p class="text-gray-300">
+            Coloque seus tokens INS em stake para recompensas e participe da gamificação da plataforma.
+          </p>
+        </div>
+        <!-- Insights Card -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Insights Interativos</h3>
+          <p class="text-gray-300">
+            Visualize dados on-chain em cards simples, com atualizações sobre smart money e tendências de mercado.
+          </p>
+        </div>
+        <!-- Community Card -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Comunidade & Tokenização</h3>
+          <p class="text-gray-300">
+            Participe da governança com o token INS e acesse conteúdos premium e decisões da comunidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 border-t border-gray-700">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400 mb-4">&copy; 2025 Cripto Insights. Todos os direitos reservados.</p>
+      <div class="space-x-4">
+        <a href="about.html" class="text-cyan-400 hover:text-cyan-300">Sobre</a>
+        <a href="contact.html" class="text-cyan-400 hover:text-cyan-300">Contato</a>
+        <a href="#" class="text-cyan-400 hover:text-cyan-300">Termos de Uso</a>
+        <a href="#" class="text-cyan-400 hover:text-cyan-300">Privacidade</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

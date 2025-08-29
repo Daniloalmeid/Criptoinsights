@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights On-Chain - Cripto Insights</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Animação para os cards */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+    }
+    /* Gradiente para o fundo */
+    .section-bg {
+      background: linear-gradient(135deg, #1e3a8a, #6b21a8);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo.png" alt="Cripto Insights Logo" class="h-12 mr-4" onerror="this.src='https://via.placeholder.com/50?text=Logo'"/>
+        <h1 class="text-2xl font-bold text-cyan-400">Cripto Insights</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-cyan-400 transition">Início</a>
+        <a href="wallet.html" class="hover:text-cyan-400 transition">Carteira</a>
+        <a href="stake.html" class="hover:text-cyan-400 transition">Stake</a>
+        <a href="insights.html" class="hover:text-cyan-400 transition">Insights</a>
+        <a href="about.html" class="hover:text-cyan-400 transition">Sobre</a>
+        <a href="contact.html" class="hover:text-cyan-400 transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Insights Section -->
+  <section class="section-bg py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Insights On-Chain</h2>
+      <p class="text-lg text-gray-300 text-center max-w-3xl mx-auto mb-8">
+        Explore dados diretamente da blockchain, apresentados em cards simples e interativos. Acompanhe movimentações de smart money, volume de transações e tendências de mercado.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card: Volume de Transações -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Volume de Transações INS</h3>
+          <p class="text-gray-300 mb-4">Acompanhe o volume diário de transações do token INS na Solana.</p>
+          <canvas id="volume-chart" class="w-full h-48"></canvas>
+        </div>
+        <!-- Card: Smart Money -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Movimentações Smart Money</h3>
+          <p class="text-gray-300">Carteiras influentes movimentaram 12.5K INS nas últimas 24h.</p>
+          <button class="mt-4 bg-cyan-500 text-gray-900 px-4 py-2 rounded-full hover:bg-cyan-400 transition">Ver Detalhes</button>
+        </div>
+        <!-- Card: Tendências de Mercado -->
+        <div class="card-hover bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-cyan-400 mb-4">Tendências de Mercado</h3>
+          <p class="text-gray-300">Crescimento de 15% em DAOs na Solana esta semana.</p>
+          <button class="mt-4 bg-cyan-500 text-gray-900 px-4 py-2 rounded-full hover:bg-cyan-400 transition">Explorar Mais</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 border-t border-gray-700">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400 mb-4">&copy; 2025 Cripto Insights. Todos os direitos reservados.</p>
+      <div class="space-x-4">
+        <a href="about.html" class="text-cyan-400 hover:text-cyan-300">Sobre</a>
+        <a href="contact.html" class="text-cyan-400 hover:text-cyan-300">Contato</a>
+        <a href="#" class="text-cyan-400 hover:text-cyan-300">Termos de Uso</a>
+        <a href="#" class="text-cyan-400 hover:text-cyan-300">Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/insights.js"></script>
+</body>
+</html>
